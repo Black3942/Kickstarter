@@ -1,13 +1,439 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Kickstarter</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/x-icon"
+    >
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+  <body class="page__body">
+    <header class="header page__header">
+      <div class="header__content container">
+        <a
+          href="/"
+          title="Kickstarter"
+          class="header__logo"
+        >
+          <img src="./svg/logo.svg" alt="Kickstarter">
+        </a>
+
+        <div class="header__right-col">
+          <a href="#specs" class="header__specs">
+            Specs
+          </a>
+
+          <div class="header__langs">
+            <span>
+              EN
+            </span>
+
+            <span>
+              /
+            </span>
+
+            <a href="#ua" class="header__lang">
+              UA
+            </a>
+          </div>
+
+          <button type="button" class="header__buy button">
+            Buy
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="our-story page__section" id="our-story">
+      <div class="our-story__img"></div>
+
+      <div class="container">
+        <h1 class="our-story__title">
+          Futuristic Wireless Speaker
+        </h1>
+
+        <span class="our-story__description">
+          Luna&apos;s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.
+        </span>
+      </div>
+    </section>
+
+    <section class="benefits page__section" id="benefits">
+      <div class="container">
+        <div class="benefits__menu">
+          <a href="#our-story" class="benefits__menu-link">Our story</a>
+          <a href="#about-us" class="benefits__menu-link">About us</a>
+          <a href="#testimonilas" class="benefits__menu-link">Testimonilas</a>
+          <a href="#features" class="benefits__menu-link">Features</a>
+          <a href="#questions" class="benefits__menu-link">Questions</a>
+        </div>
+
+        <div class="benefits__content">
+          <ul class="benefits__cards">
+            <li class="benefits__card">
+              <img
+                src="./svg/divider.svg"
+                alt="Futuristic Design"
+                class="benefits__card-icon"
+              >
+
+              <span class="benefits__card-title">
+                Futuristic Design
+              </span>
+
+              <span class="benefits__card-description">
+                To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.
+              </span>
+            </li>
+
+            <li class="benefits__card">
+              <img
+                src="./svg/speaker.svg"
+                alt="Tweeter Speaker System"
+                class="benefits__card-icon"
+              >
+
+              <span class="benefits__card-title">
+                Tweeter Speaker System
+              </span>
+
+              <span class="benefits__card-description">
+                To deliver a more layered sound performance better than a sole full-range speaker, our team equipped Luna with one more tweeter speaker responsible for high-frequency sound independently.
+              </span>
+            </li>
+
+            <li class="benefits__card">
+              <img
+                src="./svg/wi-fi.svg"
+                alt="Multiroom System"
+                class="benefits__card-icon"
+              >
+
+              <span class="benefits__card-title">
+                Multiroom System
+              </span>
+
+              <span class="benefits__card-description">
+                Luna is natively compatible with your home Wi-Fi. Set up multiple speakers in different rooms to expand your music experience into the entire house.
+              </span>
+            </li>
+
+            <li class="benefits__card">
+              <img
+                src="./svg/sun.svg"
+                alt="Intuitive Lighting System"
+                class="benefits__card-icon"
+              >
+
+              <span class="benefits__card-title">
+                Intuitive Lighting System
+              </span>
+
+              <span class="benefits__card-description">
+                An intuitive user interface allows you to adjust the hue and saturation of color for lighting that fits any mood and situation.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="benefits__dots"></div>
+      </div>
+    </section>
+
+    <section class="presentation page__section" id="presentation">
+      <picture>
+        <source
+          srcset="./images/desktop/2.jpg"
+          media="(min-width: 1280px)"
+        >
+
+        <source
+          srcset="./images/tablet/3.jpg"
+          media="(min-width: 768px)"
+        >
+
+        <img
+          src="./images/mobile/3.jpg"
+          alt="Meet Luna"
+          class="presentation__img"
+        >
+      </picture>
+    </section>
+
+    <section class="about-us page__section" id="about-us">
+      <div class="about-us__card">
+        <div class="container">
+          <div class="about-us__card-content">
+            <h2 class="about-us__card-title">
+              DESIGNED FOR THE FUTURE
+            </h2>
+
+            <img
+              src="./images/desktop/5.jpg"
+              alt="luna"
+              class="about-us__card-img"
+            >
+
+            <p class="about-us__card-description">
+              In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products.
+            </p>
+
+            <button type="button" class="about-us__card-button">
+              See more about us
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us__card">
+        <div class="container">
+          <div class="about-us__card-content">
+            <h2 class="about-us__card-title">
+              Luna Eye
+            </h2>
+
+            <img
+              src="./images/desktop/3.jpg"
+              alt="luna"
+              class="about-us__card-img"
+            >
+
+            <p class="about-us__card-description">
+              Luna Eye is to the essence of this innovative light and audio system. It comprises an independent tweeter speaker, a light guiding component, a dome and a ring ornament.
+            </p>
+
+            <button type="button" class="about-us__card-button">
+              See more about us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonilas page__section" id="testimonilas">
+      <div class="container">
+        <div class="testimonilas__content">
+          <span class="testimonilas__story">
+            It really took me by surprise honestly to have such full beautiful sound that coming out of this small compact device. And with the brush aluminum surface, it feels so familiar. Like my iPhone.
+          </span>
+
+          <img
+            src="./images/desktop/ellipse.png"
+            alt="Garrett Martin"
+            class="testimonilas__photo"
+          >
+
+          <span class="testimonilas__name">
+            Garrett Martin
+          </span>
+
+          <span class="testimonilas__occupation">
+            Creative Director
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features page__section" id="features">
+      <div class="container">
+        <h2 class="features__title">
+          FEATURES
+        </h2>
+      </div>
+
+      <div class="features__container container">
+        <div class="features__content">
+          <div class="features__lists" id="featuresLists">
+            <ul class="features__list">
+              <h3 class="features__listTitle">Connectivity</h3>
+
+              <li class="features__listItem">Hands Free Wireless Audio</li>
+              <li class="features__listItem">Bluetooth 4.0 LE</li>
+              <li class="features__listItem">Wi-Fi 2.4 GHz (802.11 b/g/n)</li>
+              <li class="features__listItem">Smart Multiroom System Set Up</li>
+              <li class="features__listItem">Party Mode with 6.0 Units and above</li>
+              <li class="features__listItem">MESHNET Multi Speaker Network</li>
+            </ul>
+
+            <ul class="features__list">
+              <h3 class="features__listTitle">App Features</h3>
+
+              <li class="features__listItem">Customize Music Schedule</li>
+              <li class="features__listItem">Wake Up with Favorite Songs</li>
+              <li class="features__listItem">Home Detection Auto Wake Up</li>
+              <li class="features__listItem">Color Wheel</li>
+            </ul>
+
+            <ul class="features__list">
+              <h3 class="features__listTitle">Sound & Music</h3>
+
+              <li class="features__listItem">Feel-in-chest Base Power</li>
+              <li class="features__listItem">Lossless Digital Audio Transmission</li>
+              <li class="features__listItem">Easy & Stable Stereo Pairing</li>
+              <li class="features__listItem">Crisp and Clear High Frequency Sound</li>
+              <li class="features__listItem">Streams from Cloud Music and Local Library</li>
+              <li class="features__listItem">Auto Music Playback from Last Song Stopped</li>
+            </ul>
+          </div>
+
+          <div class="features__slider">
+            <div class="features__sliderButtons">
+              <button
+                type="button"
+                class="features__sliderButton"
+                id="featuresPrev"
+                disabled
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="13"
+                  viewBox="0 0 48 13"
+                  fill="none"
+                  class="features__sliderButtonSvg"
+                >
+                  <path d="M48 4.19628e-06L0.329261 0L0.329261 0.999998L48 1V4.19628e-06Z" fill="#333333"></path>
+                  <path d="M18.2022 11.8047L0.440509 0.000149576L0 1.19548L17.7616 13L18.2022 11.8047Z" fill="#333333"></path>
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                class="features__sliderButton"
+                id="featuresNext"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="49"
+                  height="13"
+                  viewBox="0 0 49 13"
+                  fill="none"
+                  class="features__sliderButtonSvg"
+                >
+                  <path d="M0.5 13H48.1707V12H0.5V13Z" fill="#333333"></path>
+                  <path d="M30.2978 1.19533L48.0595 12.9999L48.5 11.8045L30.7384 0L30.2978 1.19533Z" fill="#333333"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="features__sliderPages">
+              <span class="features__sliderActivePage">01</span>
+              <span class="features__sliderPage">/</span>
+              <span class="features__sliderPage">03</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__bg">
+          <img
+            src="./images/features-luna.jpg"
+            alt="Features Luna"
+            class="features__bg-img"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="questions page__section" id="questions">
+      <div class="questions__container container">
+        <h2 class="questions__title">
+          DO YOU HAVE ANY QUESTIONS?
+        </h2>
+
+        <form class="questions__form">
+          <input
+            type="email"
+            class="questions__input input"
+            placeholder="Your email"
+            required
+          >
+
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            class="questions__textarea input"
+            placeholder="Your message..."
+          ></textarea>
+          <button class="questions__button button">SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer page__footer">
+      <div class="container">
+        <div class="footer__content">
+          <a href="#" class="footer__top">
+            <img src="./svg/top.svg" alt="Go to top">
+          </a>
+
+          <a href="/" class="footer__logo">
+            <img src="./svg/logo.svg" alt="Kickstarter">
+          </a>
+
+          <div class="footer__socials">
+            <a href="/" class="footer__social footer__fb">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path d="M13.3333 10.7726H17V14.3125H13.3333V22.5723H9.66667V14.3125H6V10.7726H9.66667V9.29179C9.66667 7.88882 10.1238 6.11651 11.0331 5.14776C11.9424 4.17666 13.0779 3.69287 14.4382 3.69287H17V7.23276H14.4333C13.8247 7.23276 13.3333 7.7071 13.3333 8.29354V10.7726Z" fill="#4F4F4F"></path>
+              </svg>
+            </a>
+
+            <a href="/" class="footer__social footer__twit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path d="M20.4213 7.36889C21.4088 6.79504 22.0626 6.01179 22.3828 5.01566C21.4809 5.47741 20.5131 5.81294 19.5095 6.01179C18.6504 5.13714 17.5626 4.69287 16.2586 4.69287C14.9839 4.69287 13.9072 5.11631 13.0284 5.94006C12.6041 6.33123 12.2686 6.8003 12.0424 7.31854C11.8163 7.83678 11.7044 8.39326 11.7134 8.95391C11.7134 9.3114 11.7611 9.63072 11.8564 9.90144C8.09705 9.77997 4.98545 8.3037 2.5338 5.46224C2.11827 6.15757 1.9105 6.86562 1.9105 7.59796C1.9105 9.10315 2.58147 10.296 3.92095 11.1718C3.1571 11.1105 2.4837 10.9277 1.9105 10.628C1.9105 11.7028 2.24415 12.6006 2.91267 13.3908C3.56207 14.1608 4.47725 14.6896 5.49753 14.8844C5.11622 14.977 4.71413 15.0209 4.30104 15.0209C3.91973 15.0209 3.64963 14.9909 3.48953 14.9249C3.77062 15.8007 4.30104 16.5111 5.06733 17.0548C5.82487 17.5994 6.74635 17.9005 7.69741 17.9145C6.0695 19.1235 4.20816 19.7216 2.10238 19.7216C1.58663 19.7216 1.22121 19.7147 1 19.6776C3.074 20.9526 5.38265 21.5854 7.93695 21.5854C10.5511 21.5854 12.861 20.9584 14.8715 19.7043C16.8819 18.4571 18.3656 16.9183 19.3189 15.1065C20.2616 13.3534 20.7524 11.4139 20.7512 9.44676V8.90531C21.6299 8.29204 22.3906 7.54025 23 6.68282C22.177 7.02049 21.3096 7.25127 20.4213 7.36889Z" fill="#4F4F4F"></path>
+              </svg>
+            </a>
+
+            <a href="/" class="footer__social footer__inst">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path d="M18 3.69287H6C4.3 3.69287 3 4.98465 3 6.67391V18.5981C3 20.2873 4.3 21.5791 6 21.5791H18C19.7 21.5791 21 20.2873 21 18.5981V6.67391C21 4.98465 19.7 3.69287 18 3.69287ZM12 9.65495C13.7 9.65495 15 10.9467 15 12.636C15 14.3252 13.7 15.617 12 15.617C10.3 15.617 9 14.3252 9 12.636C9 10.9467 10.3 9.65495 12 9.65495ZM15.8 7.66759C15.8 6.97201 16.4 6.47517 17 6.47517C17.6 6.47517 18.2 7.07138 18.2 7.66759C18.2 8.2638 17.7 8.86 17 8.86C16.3 8.86 15.8 8.36316 15.8 7.66759ZM18 19.5917H6C5.4 19.5917 5 19.1943 5 18.5981V12.636H7C7 15.4183 9.2 17.6044 12 17.6044C14.8 17.6044 17 15.4183 17 12.636H19V18.5981C19 19.1943 18.6 19.5917 18 19.5917Z" fill="#4F4F4F"></path>
+                <defs>
+                  <radialgradient
+                    id="brand-gradient"
+                    r="150%"
+                    cx="30%"
+                    cy="107%"
+                  >
+                    <stop stop-color="#fdf497" offset="0"></stop>
+                    <stop stop-color="#fdf497" offset="0.05"></stop>
+                    <stop stop-color="#fd5949" offset="0.45"></stop>
+                    <stop stop-color="#d6249f" offset="0.6"></stop>
+                    <stop stop-color="#285AEB" offset="0.9"></stop>
+                  </radialgradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+
+          <span class="footer__text">
+            © 2019 All rights reserved. Terms of Use & Privacy Policy
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
